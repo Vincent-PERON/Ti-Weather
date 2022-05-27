@@ -1,0 +1,108 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.blueTest {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.redTest {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.greenTest {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+header {
+    /* height: 60px;  */
+}
+
+h1 {
+    /* text-align: center;
+    font-weight: 900;
+    font-size: 2.5rem; */
+    padding: 15px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+h1 span {
+    font-size: 2.5rem ;
+    font-weight: bold;
+    text-align: center;
+    padding-right: 20px;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+
+h1 img{
+    height: 5vh;
+    padding-left: 20px;
+    opacity: 0.7;
+}
+
+
+footer {
+    height: 250px;
+}
+
+main {
+    /* on impose au main de s'étaler sur toute la place restante */
+     flex-grow: 1; 
+    /* overflow: auto;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+    flex-wrap: wrap; */
+    background-color: #21263b;
+}
+
+ .weatherToday {
+    padding-left: 150px;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.weatherToday #dateheure{
+    padding: 50px 0 50px 0;
+}
+
+
+.weatherToday .temp {
+    font-size: 15rem;
+    padding-top: 200px;
+}
+
+.weatherToday .location {
+    font-size: 5rem;
+    padding-left: 30px;
+}
+
+.weatherToday .meteo1 {
+    padding-top: 80px;
+}
+
+.weatherToday .meteo2 {
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
