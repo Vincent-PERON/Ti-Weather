@@ -25,14 +25,16 @@ html{
 
 
 h1 {
-    /* text-align: center;
-    font-weight: 900;
-    font-size: 2.5rem; */
     padding: 15px;  
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 0.5;
 
+}
+
+h1 .agence {
+    color: #000;
 }
 
 h1 span {
@@ -41,14 +43,12 @@ h1 span {
     text-align: center;
     padding-right: 20px;
     font-style: italic;
-    opacity: 0.5;
 }
 
 
 h1 img{
     height: 5vh;
     padding-left: 20px;
-    opacity: 0.7;
 }
 
 

@@ -17,21 +17,21 @@
 <body>
     <div id="container">
         <header class="">
-            <h1><img src="./assets/img/logo_tibco.png"><span class ="agence">Agence de Gouesnou</span></h1>
+            <h1><img src="./assets/img/logo_tibco.png"><span>Agence de <span class ="agence"></span></span></h1>
         </header>
 <!-- ******** Météo du jour *********** -->
-        <main class="">
-            <section class="weatherToday ">
+        <main>
+            <div class="weatherToday ">
                 <p id="dateheure"></p>
                 <data class="temp">-°C</data><data class="location"></data>
                 <p class="meteo1">Humidité :&nbsp;<data class="humidity"></data> &nbsp;&nbsp; &nbsp;Vent :&nbsp;<data class="wind"></data> </p>
                 <p class="meteo2">Pression :&nbsp;<data class="pressure"></data> 
-            </section>
-            <section class="weatherToday--icon">
-                <!-- <i class="wi wi-day-sunny"></i> -->
+            </div>
+
+            <div class="weatherToday--icon">
                 <i class="icon"></i>
                 <p class="todaydesc"></p>
-            </section>
+            </div>
 
         </main>
 
@@ -69,8 +69,6 @@
             </div>            
 
         </footer>
-
-
     </div>
 <script src="./assets/js/app.js"></script>
 </body>
