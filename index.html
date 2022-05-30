@@ -16,17 +16,18 @@
 </head>
 <body>
     <div id="container">
-        <header class="redTest2">
+        <header class="">
             <h1><img src="./assets/img/logo_tibco.png"><span class ="agence">Agence de Gouesnou</span></h1>
         </header>
+<!-- ******** Météo du jour *********** -->
         <main class="">
-            <section class="weatherToday redTest">
+            <section class="weatherToday ">
                 <p id="dateheure"></p>
                 <data class="temp">-°C</data><data class="location"></data>
                 <p class="meteo1">Humidité :&nbsp;<data class="humidity"></data> &nbsp;&nbsp; &nbsp;Vent :&nbsp;<data class="wind"></data> </p>
                 <p class="meteo2">Pression :&nbsp;<data class="pressure"></data> 
             </section>
-            <section class="weatherToday--icon blueTest">
+            <section class="weatherToday--icon">
                 <!-- <i class="wi wi-day-sunny"></i> -->
                 <i class="icon"></i>
                 <p class="todaydesc"></p>
@@ -34,9 +35,38 @@
 
         </main>
 
-        <footer class="blueTest2">
-
-
+<!-- ******** Prévisions sur 5 jours *********** -->
+        <footer class="">
+            <div id="next-days">
+                <ul>
+                 <li>
+                     <i class="icon-day-1"></i> <!-- ***** Jour 1 ***** -->
+                     <p><b class="temp-day-1"></b></p>
+                     <b>Jour1</b>
+                 </li>
+                 <li>
+                    <i class="icon-day-2"></i>  <!-- ***** Jour 2 ***** -->
+                    <p><b class="temp-day-2"></b></p>
+                    <b>Jour1</b>
+                 </li>
+                 <li>
+                    <i class="icon-day-3"></i>  <!-- ***** Jour 3 ***** -->
+                    <p><b class="temp-day-3"></b></p>
+                    <b>Jour1</b>
+                </li>
+                <li>
+                    <i class="icon-day-4"></i>  <!-- ***** Jour 4 ***** -->
+                    <p><b class="temp-day-4"></b></p>
+                    <b>Jour1</b>
+                </li>
+                <li>
+                    <i class="icon-day-5"></i>  <!-- ***** Jour 5 ***** -->
+                    <p><b class="temp-day-5"></b></p>
+                    <b>Jour1</b>
+                </li>
+                </ul>
+               
+            </div>            
 
         </footer>
 

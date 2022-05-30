@@ -100,6 +100,7 @@ main {
 .weatherToday--icon {
     flex-grow: 1;
     padding: 50px;
+    padding-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,7 +117,41 @@ main {
     color: #fff;
     font-size: 3rem;
     padding: 40px;
+    padding-top: 10px;
 }
 
+#next-days {
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px 10px 40px;
+}
+
+#next-days ul {
+    white-space: nowrap;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#next-days li {
+    display: flex;
+    flex-direction: column;
+}
+
+#next-days p {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: #7a7d89;
+}
+
+
+#next-days b {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: #7a7d89;
+}
 
 
