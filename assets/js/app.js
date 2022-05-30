@@ -119,3 +119,19 @@ window.addEventListener("load", () => {
 
 });
 
+// Affichage des 5 jours prochains
+let j1 = document.querySelector(".jour1");
+let j2 = document.querySelector(".jour2");
+let j3 = document.querySelector(".jour3");
+let j4 = document.querySelector(".jour4");
+let j5 = document.querySelector(".jour5");
+
+var days= ["DIM","LUN","MAR","MER","JEU","VEN","SAM"];
+var today = new Date();
+
+j1.textContent = days[today.getDay()+1];
+j2.textContent = days[today.getDay()+2];
+j3.textContent = days[today.getDay()+3];
+j4.textContent = days[today.getDay()+4];
+j5.textContent = days[today.getDay()+5];
+
