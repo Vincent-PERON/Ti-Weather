@@ -23,9 +23,6 @@ html{
 }
 
 
-header {
-    /* height: 60px;  */
-}
 
 h1 {
     /* text-align: center;
@@ -62,16 +59,15 @@ footer {
 main {
     /* on impose au main de s'étaler sur toute la place restante */
      flex-grow: 1; 
-    /* overflow: auto;
+    /* overflow: auto; */
     display: flex;
-    justify-content: center;
-    padding: 1em;
-    gap: 1em;
-    flex-wrap: wrap; */
+    justify-content: space-between;
+    flex-wrap: wrap; 
     background-color: #21263b;
 }
 
  .weatherToday {
+    flex-grow: 1;
     padding-left: 150px;
     color: #fff;
     font-size: 3rem;
@@ -98,11 +94,29 @@ main {
 
 .weatherToday .meteo2 {
     padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.weatherToday--icon {
+    flex-grow: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 
+.weatherToday--icon .wi {
+    color: #fff;
+    font-size: 15rem;
+}
 
-
+.weatherToday--icon p {
+    color: #fff;
+    font-size: 3rem;
+    padding: 40px;
+}
 
 
 

@@ -25,12 +25,13 @@ async function afficherDate()
 }
 afficherDate();
 
-// Affiche la température actuelle
+// Affiche la température actuelle 
 let temperature = document.querySelector(".temp");
 let humidity = document.querySelector(".humidity");
 let pressure = document.querySelector(".pressure");
 let wind = document.querySelector(".wind");
 let loc = document.querySelector(".location");
+let todayDesc = document.querySelector(".todaydesc");
 let icon = document.querySelector(".icon");
 const kelvin = 273;
   
@@ -39,7 +40,7 @@ window.addEventListener("load", () => {
       const api = "6d055e39ee237af35ca066f35474e9df";
   
       // API URL
-      const base = `https://api.openweathermap.org/data/2.5/weather?q=${city},fr&appid=c21a75b667d6f7abb81f118dcf8d4611&units=metric"`;
+      const base = `https://api.openweathermap.org/data/2.5/weather?q=${city},fr&lang=fr&appid=c21a75b667d6f7abb81f118dcf8d4611&units=metric"`;
 
       // Calling the API
       fetch(base)
@@ -55,8 +56,11 @@ window.addEventListener("load", () => {
           pressure.textContent = data.main.pressure +" hPa";
           wind.textContent = data.wind.speed + " km/h";
           loc.textContent = data.name;
-          let icon1 = data.weather[0].icon;
-          icon.innerHTML = 
-              `<img src="icons/${icon1}.svg" style= 'height:10rem'/>`;
+          icon1 = data.weather[0].icon;
+          todayDesc.textContent = data.weather[0].description;
+          icon.innerHTML = `<img src="./assets/icons/${icon1}.svg" style="height:18rem; filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(152deg) brightness(103%) contrast(103%); "/>`;
         });
 });
+
+
+

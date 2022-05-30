@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/weather-icons.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>WeatherApp</title>
     
@@ -19,19 +20,23 @@
             <h1><img src="./assets/img/logo_tibco.png"><span class ="agence">Agence de Gouesnou</span></h1>
         </header>
         <main class="">
-            <section class="weatherToday">
+            <section class="weatherToday redTest">
                 <p id="dateheure"></p>
                 <data class="temp">-°C</data><data class="location"></data>
                 <p class="meteo1">Humidité :&nbsp;<data class="humidity"></data> &nbsp;&nbsp; &nbsp;Vent :&nbsp;<data class="wind"></data> </p>
                 <p class="meteo2">Pression :&nbsp;<data class="pressure"></data> 
-                
+            </section>
+            <section class="weatherToday--icon blueTest">
+                <!-- <i class="wi wi-day-sunny"></i> -->
+                <i class="icon"></i>
+                <p class="todaydesc"></p>
             </section>
 
-            <section class="weatherWeek">
-            </section>
         </main>
 
         <footer class="blueTest2">
+
+
 
         </footer>
 
