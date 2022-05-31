@@ -13,7 +13,6 @@ L'application appel l'API de [OpenWeatherMap](https://openweathermap.org/)
 Vous pouvez consulter la demo   ici 
 
 ## Paramètres
-===========================
 
 **Récupération de la météo du jour** :
 ```bash
