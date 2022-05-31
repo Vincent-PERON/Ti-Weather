@@ -21,5 +21,8 @@ https://api.openweathermap.org/data/2.5/forecast?q=${city},fr&lang=fr&appid=c21a
 
 ```
 
-La variable ${city} est déclarée actuellement dans le fichier ./assets/js/app.js  (ligne 02)
-UNe évolution sera à prévoir pour la déclarer dans l'URL directement.
+Pour afficher la météo de votre ville il suffit de modifier le nom de la ville dans l'url
+```bash
+https://vincent-peron.github.io/weatherApp/index.html?city=Brest 
+
+```
