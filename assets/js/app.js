@@ -1,8 +1,7 @@
-// inscrire ici le nom de votre ville
-var city = "gouesnou";
-
-
-
+// Onrécupère le nom de la ville inscris dans l'url
+let params = new URLSearchParams(document.location.search);
+let cityname = params.get("city"); // is the string "Gouesnou"
+var city = cityname;
 
 
 // Affiche le nom de la ville dans l'entête
