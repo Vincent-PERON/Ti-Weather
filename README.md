@@ -7,7 +7,7 @@
 Le weatherApp est un site internet développé en HTML/CSS/JS
 Il permet d'affciher la météo du jour + les prévivions à 5 jours.
 
-L'application appel l'API de [OpenWeatherMap](https://openweathermap.org/)
+L'application appelle l'API de [OpenWeatherMap](https://openweathermap.org/)
 
 ## Démonstration
 Vous pouvez consulter la demo [ICI](https://vincent-peron.github.io/weatherApp/index.html?city=Brest)
