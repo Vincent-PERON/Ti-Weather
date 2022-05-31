@@ -9,6 +9,12 @@ Il permet d'affciher la météo du jour + les prévivions à 5 jours.
 
 L'application appel l'API de [OpenWeatherMap](https://openweathermap.org/)
 
+## Démonstration
+Vous pouvez consulter la demo   ici 
+
+## Paramètres
+===========================
+
 **Récupération de la météo du jour** :
 ```bash
 https://api.openweathermap.org/data/2.5/weather?q=${city},fr&lang=fr&appid=c21a75b667d6f7abb81f118dcf8d4611&units=metric
