@@ -10,7 +10,7 @@ Il permet d'affciher la météo du jour + les prévivions à 5 jours.
 L'application appel l'API de [OpenWeatherMap](https://openweathermap.org/)
 
 ## Démonstration
-Vous pouvez consulter la demo   ici 
+Vous pouvez consulter la demo [ICI]([https://openweathermap.org/](https://vincent-peron.github.io/weatherApp/index.html?city=Brest))
 
 ## Paramètres
 
