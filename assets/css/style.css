@@ -155,3 +155,115 @@ main {
 }
 
 
+/*
+    Styles pour les écrans de moins de 1900px de large :
+*/
+
+@media screen and (max-width: 1900px) {
+
+    h1 span {
+        font-size: 2rem ;
+        font-weight: bold;
+        text-align: center;
+        padding-right: 20px;
+        font-style: italic;
+    }
+    
+    
+    h1 img{
+        height: 4vh;
+        padding-left: 20px;
+    }
+
+
+    .weatherToday {
+        flex-grow: 1;
+        padding-left: 150px;
+        color: #fff;
+        font-size: 2rem;
+    }
+    
+    .weatherToday #dateheure{
+        padding: 50px 0 50px 0;
+    }
+    
+    
+    .weatherToday .temp {
+        font-size: 10rem;
+        padding-top: 200px;
+    }
+    
+    .weatherToday .location {
+        font-size: 3rem;
+        padding-left: 40px;
+    }
+    
+    .weatherToday .meteo1 {
+        padding-top: 80px;
+    }
+    
+    .weatherToday .meteo2 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .weatherToday--icon {
+        flex-grow: 1;
+        padding: 50px;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    
+    .weatherToday--icon p {
+        color: #fff;
+        font-size: 2.2rem;
+        padding: 40px;
+        padding-top: 30px;
+    }
+    
+    
+    #next-days b {
+        font-size: 22px;
+        text-align: center;
+        padding: 10px;
+        color: #7a7d89;
+    }
+}
+
+
+/*
+    Styles pour les écrans de moins de 900px de large :
+*/
+
+@media screen and (max-width: 900px) {
+
+    
+    .weatherToday--icon .wi {
+        color: pink;
+        font-size: 3rem;
+    }
+    
+    .weatherToday--icon p {
+        color: #fff;
+        padding: 40px;
+        padding-top: 10px;
+    }
+
+    .weatherToday .temp {
+        padding-top: 200px;
+    }
+    
+    .weatherToday .location {
+        padding-left: 30px;
+    }
+
+
+
+
+
+
+}
