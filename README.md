@@ -31,12 +31,4 @@ https://api.openweathermap.org/data/2.5/weather?q=${city},fr&lang=fr&appid=c21a7
 https://api.openweathermap.org/data/2.5/forecast?q=${city},fr&lang=fr&appid=c21a75b667d6f7abb81f118dcf8d4611&units=metric 
 
 ```
-
-<<<<<<< HEAD
-=======
-Pour afficher la météo de votre ville il suffit de modifier le nom de la ville dans l'url
-```bash
-https://vincent-peron.github.io/weatherApp/index.html?city=Brest 
-
-```
->>>>>>> ba1e29fd8d84c83782c096be15657502c173e5fc
+test
