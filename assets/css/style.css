@@ -118,6 +118,7 @@ main {
     font-size: 3rem;
     padding: 40px;
     padding-top: 10px;
+    text-transform: capitalize; 
 }
 
 #next-days {

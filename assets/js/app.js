@@ -109,17 +109,7 @@ window.addEventListener("load", () => {
 
           iconj5 = data5.list[39].weather[0].icon;
           iconday5.innerHTML = `<img src="./assets/icons/${iconj5}.svg" style="height:7rem; filter: invert(13%) sepia(43%) saturate(497%) hue-rotate(189deg) brightness(95%) contrast(95%); "/>`;
-          
-          
-          /*
-          humidity.textContent = data.main.humidity +" %";
-          pressure.textContent = data.main.pressure +" hPa";
-          wind.textContent = data.wind.speed + " km/h";
-          loc.textContent = data.name;
-          icon1 = data.weather[0].icon;
-          todayDesc.textContent = data.weather[0].description;
-          icon.innerHTML = `<img src="./assets/icons/${icon1}.svg" style="height:18rem; filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(152deg) brightness(103%) contrast(103%); "/>`;
-        */
+
         });
 
 });
@@ -130,6 +120,8 @@ let j2 = document.querySelector(".jour2");
 let j3 = document.querySelector(".jour3");
 let j4 = document.querySelector(".jour4");
 let j5 = document.querySelector(".jour5");
+let j6 = document.querySelector(".jour6");
+let j7 = document.querySelector(".jour7");
 
 var days= ["DIM","LUN","MAR","MER","JEU","VEN","SAM"];
 var today = new Date();
@@ -139,4 +131,6 @@ j2.textContent = days[today.getDay()+2];
 j3.textContent = days[today.getDay()+3];
 j4.textContent = days[today.getDay()+4];
 j5.textContent = days[today.getDay()+5];
+j6.textContent = days[today.getDay()+5];
+j7.textContent = days[today.getDay()+5];
 
