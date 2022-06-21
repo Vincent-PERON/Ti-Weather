@@ -113,6 +113,7 @@ main {
     font-size: 15rem;
 }
 
+
 .weatherToday--icon p {
     color: #fff;
     font-size: 3rem;
@@ -153,6 +154,7 @@ main {
     text-align: center;
     padding: 10px;
     color: #7a7d89;
+    text-transform: uppercase;
 }
 
 
@@ -224,6 +226,7 @@ main {
         font-size: 2.2rem;
         padding: 40px;
         padding-top: 30px;
+        text-transform: capitalize; 
     }
     
     

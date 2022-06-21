@@ -115,22 +115,32 @@ window.addEventListener("load", () => {
 });
 
 // Affichage des 5 jours prochains
-let j1 = document.querySelector(".jour1");
-let j2 = document.querySelector(".jour2");
-let j3 = document.querySelector(".jour3");
-let j4 = document.querySelector(".jour4");
-let j5 = document.querySelector(".jour5");
-let j6 = document.querySelector(".jour6");
-let j7 = document.querySelector(".jour7");
+// On récupère les éléments HTML 
+let j1 = document.querySelector("#jour1");
+let j2 = document.querySelector("#jour2");
+let j3 = document.querySelector("#jour3");
+let j4 = document.querySelector("#jour4");
+let j5 = document.querySelector("#jour5");
 
-var days= ["DIM","LUN","MAR","MER","JEU","VEN","SAM"];
-var today = new Date();
+// On constitue nos 5 jours prochain - ON obtiendra un résultat Thu Jun 23 2022 18:11:12 GMT+0200 (heure d’été d’Europe centrale)
+const day1 = new Date(Date.now() + (3600 * 1000 * 24))   // J+1
+const day2 = new Date(Date.now() + (7200 * 1000 * 24))   // J+2
+const day3 = new Date(Date.now() + (10800 * 1000 * 24))  // J+3
+const day4 = new Date(Date.now() + (14400 * 1000 * 24))  // J+4
+const day5 = new Date(Date.now() + (18000 * 1000 * 24))  // J+5
 
-j1.textContent = days[today.getDay()+1];
-j2.textContent = days[today.getDay()+2];
-j3.textContent = days[today.getDay()+3];
-j4.textContent = days[today.getDay()+4];
-j5.textContent = days[today.getDay()+5];
-j6.textContent = days[today.getDay()+5];
-j7.textContent = days[today.getDay()+5];
+
+// On formate les dates pour n'afficher que le jour et en mode réduit (mer. jeu. ven. )
+const jour1 =  day1.toLocaleString("default", { weekday: "short" });
+const jour2 =  day2.toLocaleString("default", { weekday: "short" });
+const jour3 =  day3.toLocaleString("default", { weekday: "short" });
+const jour4 =  day4.toLocaleString("default", { weekday: "short" });
+const jour5 =  day5.toLocaleString("default", { weekday: "short" });
+
+// On insère via le DOM les valeurs 
+j1.textContent = jour1
+j2.textContent = jour2
+j3.textContent = jour3
+j4.textContent = jour4
+j5.textContent = jour5
 
