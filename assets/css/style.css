@@ -89,7 +89,7 @@ main {
 }
 
 .weatherToday .meteo1 {
-    padding-top: 80px;
+    padding-top: 70px;
 }
 
 .weatherToday .meteo2 {
@@ -199,10 +199,10 @@ main {
     .weatherToday .location {
         font-size: 3rem;
         padding-left: 40px;
-    }
+    }g
     
     .weatherToday .meteo1 {
-        padding-top: 80px;
+        padding-top: 70px;
     }
     
     .weatherToday .meteo2 {
