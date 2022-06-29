@@ -1,6 +1,6 @@
-// Onrécupère le nom de la ville inscris dans l'url
+// On récupère le nom de la ville inscris dans l'url  index.html?ville=xxxxx
 let params = new URLSearchParams(document.location.search);
-let cityname = params.get("city"); // is the string "Gouesnou"
+let cityname = params.get("ville"); 
 var city = cityname;
 
 
@@ -52,7 +52,7 @@ let iconday3 = document.querySelector(".icon-day-3");
 let iconday4 = document.querySelector(".icon-day-4");
 let iconday5 = document.querySelector(".icon-day-5");
 
-
+// On déclare une constante kelvin pour convertir la temparature reçue en degré °
 const kelvin = 273;
   
 window.addEventListener("load", () => {
@@ -89,11 +89,11 @@ window.addEventListener("load", () => {
         })
         .then((data5) => {
           console.log(data5);
-          temperatureminday1.textContent = Math.floor(data5.list[7].main.temp) + "°C";
-          temperatureminday2.textContent = Math.floor(data5.list[15].main.temp) + "°C";
-          temperatureminday3.textContent = Math.floor(data5.list[23].main.temp) + "°C";
-          temperatureminday4.textContent = Math.floor(data5.list[31].main.temp) + "°C";
-          temperatureminday5.textContent = Math.floor(data5.list[39].main.temp) + "°C";
+          temperatureminday1.textContent = Math.floor(data5.list[7].main.temp)  + "°C"; // J+1
+          temperatureminday2.textContent = Math.floor(data5.list[15].main.temp) + "°C"; // J+2
+          temperatureminday3.textContent = Math.floor(data5.list[23].main.temp) + "°C"; // J+3
+          temperatureminday4.textContent = Math.floor(data5.list[31].main.temp) + "°C"; // J+4
+          temperatureminday5.textContent = Math.floor(data5.list[39].main.temp) + "°C"; // J+5
           
           iconj1 = data5.list[7].weather[0].icon;
           iconday1.innerHTML = `<img src="./assets/icons/${iconj1}.svg" style="height:7rem; filter: invert(13%) sepia(43%) saturate(497%) hue-rotate(189deg) brightness(95%) contrast(95%); "/>`;
@@ -115,7 +115,7 @@ window.addEventListener("load", () => {
 });
 
 // Affichage des 5 jours prochains
-// On récupère les éléments HTML 
+// On récupère les éléments HTML avec leur ID
 let j1 = document.querySelector("#jour1");
 let j2 = document.querySelector("#jour2");
 let j3 = document.querySelector("#jour3");
@@ -137,7 +137,7 @@ const jour3 =  day3.toLocaleString("default", { weekday: "short" });
 const jour4 =  day4.toLocaleString("default", { weekday: "short" });
 const jour5 =  day5.toLocaleString("default", { weekday: "short" });
 
-// On insère via le DOM les valeurs 
+// On insère dans le DOM les valeurs 
 j1.textContent = jour1
 j2.textContent = jour2
 j3.textContent = jour3

@@ -1,77 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/weather-icons.min.css">
-    <link rel="shortcut icon" href="./assets/img/favicon.ico"/>
-    <link rel="apple-touch-icon" href="./assets/img/favicon.ico"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/weather-icons.min.css" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="./assets/img/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>WeatherApp</title>
-    
-</head>
-<body>
+    <title>TIBCO|Ti-Weather</title>
+  </head>
+  <body>
     <div id="container">
-        <header class="">
-            <h1><img src="./assets/img/logo_tibco.png"><span>Agence de <span class ="agence"></span></span></h1>
-        </header>
-<!-- ******** Météo du jour *********** -->
-        <main>
-            <div class="weatherToday ">
-                <p id="dateheure"></p>
-                <data class="temp">-°C</data><data class="location"></data>
-                <p class="meteo1">Humidité :&nbsp;<data class="humidity"></data> &nbsp;&nbsp; &nbsp;Vent :&nbsp;<data class="wind"></data> </p>
-                <p class="meteo2">Pression :&nbsp;<data class="pressure"></data> 
-            </div>
+      <header class="">
+        <h1>
+          <img src="./assets/img/logo_tibco.png" /><span
+            >Agence de <span class="agence"></span
+          ></span>
+        </h1>
+      </header>
+      <!-- ******** Météo du jour *********** -->
+      <main>
+        <div class="weatherToday">
+          <p id="dateheure"></p>
+          <data class="temp">-°C</data><data class="location"></data>
+          <p class="meteo1">
+            Humidité :&nbsp;<data class="humidity"></data> &nbsp;&nbsp;
+            &nbsp;Vent :&nbsp;<data class="wind"></data>
+          </p>
+          <p class="meteo2">Pression :&nbsp;<data class="pressure"></data></p>
+        </div>
 
-            <div class="weatherToday--icon">
-                <i class="icon"></i>
-                <p class="todaydesc"></p>
-            </div>
+        <div class="weatherToday--icon">
+          <i class="icon"></i>
+          <p class="todaydesc"></p>
+        </div>
+      </main>
 
-        </main>
-
-<!-- ******** Prévisions sur 5 jours *********** -->
-        <footer class="">
-            <div id="next-days">
-                <ul>
-                 <li>
-                     <i class="icon-day-1"></i> <!-- ***** Jour 1 ***** -->
-                     <p><b class="temp-day-1"></b></p>
-                     <b id="jour1" class="5days"></b>
-                 </li>
-                 <li>
-                    <i class="icon-day-2"></i>  <!-- ***** Jour 2 ***** -->
-                    <p><b class="temp-day-2"></b></p>
-                    <b id="jour2"class="5days"></b>
-                 </li>
-                 <li>
-                    <i class="icon-day-3"></i>  <!-- ***** Jour 3 ***** -->
-                    <p><b class="temp-day-3"></b></p>
-                    <b id="jour3" class="5days"></b>
-                </li>
-                <li>
-                    <i class="icon-day-4"></i>  <!-- ***** Jour 4 ***** -->
-                    <p><b class="temp-day-4"></b></p>
-                    <b id="jour4" class="days5"></b>
-                </li>
-                <li>
-                    <i class="icon-day-5"></i>  <!-- ***** Jour 5 ***** -->
-                    <p><b class="temp-day-5"></b></p>
-                    <b id="jour5" class="5days"></b>
-                </li>
-                </ul>
-               
-            </div>            
-
-        </footer>
+      <!-- ******** Prévisions sur 5 jours *********** -->
+      <footer class="">
+        <div id="next-days">
+          <ul>
+            <li>
+              <i class="icon-day-1"></i>
+              <!-- ***** Jour 1 ***** -->
+              <p><b class="temp-day-1"></b></p>
+              <b id="jour1" class="5days"></b>
+            </li>
+            <li>
+              <i class="icon-day-2"></i>
+              <!-- ***** Jour 2 ***** -->
+              <p><b class="temp-day-2"></b></p>
+              <b id="jour2" class="5days"></b>
+            </li>
+            <li>
+              <i class="icon-day-3"></i>
+              <!-- ***** Jour 3 ***** -->
+              <p><b class="temp-day-3"></b></p>
+              <b id="jour3" class="5days"></b>
+            </li>
+            <li>
+              <i class="icon-day-4"></i>
+              <!-- ***** Jour 4 ***** -->
+              <p><b class="temp-day-4"></b></p>
+              <b id="jour4" class="days5"></b>
+            </li>
+            <li>
+              <i class="icon-day-5"></i>
+              <!-- ***** Jour 5 ***** -->
+              <p><b class="temp-day-5"></b></p>
+              <b id="jour5" class="5days"></b>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
-<script src="./assets/js/app.js"></script>
-</body>
+    <script src="./assets/js/app.js"></script>
+  </body>
 </html>

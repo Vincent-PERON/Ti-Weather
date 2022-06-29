@@ -58,7 +58,7 @@ footer {
 
 main {
     /* on impose au main de s'étaler sur toute la place restante */
-     flex-grow: 1; 
+    flex-grow: 1; 
     /* overflow: auto; */
     display: flex;
     justify-content: space-between;
@@ -66,7 +66,7 @@ main {
     background-color: #21263b;
 }
 
- .weatherToday {
+.weatherToday {
     flex-grow: 1;
     padding-left: 150px;
     color: #fff;
@@ -79,12 +79,12 @@ main {
 
 
 .weatherToday .temp {
-    font-size: 15rem;
+    font-size: 17rem;
     padding-top: 200px;
 }
 
 .weatherToday .location {
-    font-size: 5rem;
+    font-size: 4rem;
     padding-left: 30px;
 }
 
@@ -202,7 +202,7 @@ main {
     }g
     
     .weatherToday .meteo1 {
-        padding-top: 70px;
+        padding-top: 60px;
     }
     
     .weatherToday .meteo2 {
@@ -264,10 +264,4 @@ main {
     .weatherToday .location {
         padding-left: 30px;
     }
-
-
-
-
-
-
 }
