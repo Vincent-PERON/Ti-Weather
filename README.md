@@ -26,12 +26,12 @@ https://vincent-peron.github.io/weatherApp/index.html?ville=Brest
 
  L'application appelle l'API de [OpenWeatherMap](https://openweathermap.org/)
 
-#### Récupération de la météo du jour** :
+#### Récupération de la météo du jour :
 ```bash
 https://api.openweathermap.org/data/2.5/weather?q=${city},fr&lang=fr&appid=c21a75b667d6f7abb81f118dcf8d4611&units=metric
 ```
 
-#### Récupération des prévisions sur 5 jours** :
+#### Récupération des prévisions sur 5 jours :
 
 ```bash
 https://api.openweathermap.org/data/2.5/forecast?q=${city},fr&lang=fr&appid=c21a75b667d6f7abb81f118dcf8d4611&units=metric
