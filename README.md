@@ -12,14 +12,14 @@ L’affichage de la page est automatique une fois la ville rentrée dans la barr
 
 ##  Démonstration
 
-Vous pouvez consulter la démo [ICI](https://vincent-peron.github.io/weatherApp/index.html?ville=Nantes)
+Vous pouvez consulter la démo [ICI](https://vincent-peron.github.io/Ti-Weather/index.html?ville=Nantes)
 
   
 ##  Personnalisation
 Pour afficher la météo de votre ville il suffit de modifier le nom de la ville dans l'url
 
 ```bash
-https://vincent-peron.github.io/weatherApp/index.html?ville=Brest
+https://vincent-peron.github.io/Ti-Weather/index.html?ville=Nantes
 ```
 
 ##  Paramètres
