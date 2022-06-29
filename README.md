@@ -6,9 +6,7 @@
 ##  Présentation
 
 Le Ti-Weather est une application web développée en HTML/CSS/JS
-Elle permet d’afficher la météo du jour et les prévisions sur 5 jours.
-L’affichage de la page est automatique une fois la ville rentrée dans la barre d’adresse.
-
+Elle permet d’afficher la météo du jour et les prévisions sur 5 jours une fois la ville rentrée dans la barre d’adresse.
 
 ##  Démonstration
 
